@@ -1,0 +1,9 @@
+<h3>Department Lists:</h3>
+<ul class="items"> 
+  <li (click)="onSelect(dl)" *ngFor='let dl of data'>
+    <span>{{dl.id}}</span> {{dl.title}}
+
+  </li>
+
+  <app-data-list-details></app-data-list-details>
+</ul>
